@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ковёр</title>
+</head>
+
+<body>
+	<h1>Ковёр</h1>
+	<h2 id="links">Ссылки</h2>
+	<div>
+		<ol>
+			<li>Гиперссылка на главную страницу сайта:&nbsp;<a target="_blank" href="http://www.youtube.com">YouTube</a>
+			</li>
+			<li>Гиперссылка на главную страницу сайта с протоколом https:&nbsp;<a target="_blank"
+					href="https://www.youtube.com">YouTube</a></li>
+			<li>Ссылка на файл на сервере FTP без авторизации:&nbsp;<a href="ftp://example.com/myfile.zip">Файл</a></li>
+			<li>Ссылка на файл на сервере FTP с авторизацией:&nbsp;<a
+					href="ftp://user:password@example.com/myfile.zip">Файл с
+					авторизацией</a></li>
+			<li>Ссылка на фрагмент страницы некоторого сайта:&nbsp;<a target="_blank"
+					href="https://ru.wikipedia.org/wiki/Октябрьская_революция#Предпосылки">Предпосылки Октябрьской
+					Революции</a></li>
+			<li>Ссылка на фрагмент текущей страницы:&nbsp;<a href="#biography">Напишите свою биографию</a></li>
+			<li>Ссылка с двумя параметрами в URL:&nbsp;<a target="_blank"
+					href="https://yandex.ru/search/?text=boolean&lr=35">
+					Поиск: тип boolean</a></li>
+			<li>Список ссылок основной навигации сайта с подписями title:&nbsp;<a href="#links">Ссылки</a>,&nbsp;<a
+					href="#form">Форма</a></li>
+			<li>Ссылка без href:&nbsp;<a>Ссылка без href</a></li>
+			<li>Ссылка с пустным href:&nbsp;<a href="">Ссылка с пустым href</a></li>
+			<li>Ссылка, по которой запрещен переход поисковикам:&nbsp;<a target="_blank"
+					href="https://www.wikipedia.org" rel="nofollow">Wikipedia</a></li>
+			<li>Ссылка, запрещенная для индексации поисковиками:&nbsp;<noindex--><a target="_blank"
+						href="https://www.facebook.com">Facebook</a></noindex-->
+			</li>
+			<li>Ссылка контекстная в тексте абзаца:<p>Москва столица <a target="_blank"
+						href="https://ru.wikipedia.org/wiki/Россия">
+						России</a>, город федерального значения, крупнейший по численности населения город и её субъект
+					— 12 655 050, самый населённый из городов, полностью расположенных в <a target="_blank"
+						href="https://ru.wikipedia.org/wiki/Европа">Европе</a>.</p>
+			</li>
+			<li>Ссылка изображение:<br>
+				<a target="_blank" href="https://ru.wikipedia.org/wiki/Октябрьская_революция"><img src="img/avrora.jpg"
+						alt="image"></a>
+			</li>
+			<li>
+				<map name="diagramm">
+					<area alt="Красный" shape="poly" coords="542,68,643,79,542,504"
+						href="https://ru.wikipedia.org/wiki/Красный_цвет" title="Красный цвет">
+					<area alt="Синий" shape="poly" coords="542,68,542,505,922,722,945,336"
+						href="https://ru.wikipedia.org/wiki/Синий_цвет" title="Синий цвет">
+					<area alt="Зелёный" shape="poly" coords="541,68,541,506,922,723,637,932,296,868,113,593,202,230"
+						href="https://ru.wikipedia.org/wiki/Зелёный_цвет" title="Зелёный цвет">
+				</map>
+				<img src="img/diagram.png" alt="diagrammimg" usemap="#diagramm">
+			</li>
+			<li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+			<li><a href="./about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
+			<li><a href="../example.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+			<li><a href="../../example.com">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+			<li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+			<li><a href="/example.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+		</ol>
+	</div>
+	<h2 id="form">Форма</h2>
+	<div>
+		<form action="#" method="POST">
+			<fieldset>
+				<legend>Ваши данные</legend>
+				<label>Имя<br><br>
+					<input placeholder="Имя" type="text" name="field-name" value="">
+				</label>
+				<p>
+					<label>E-mail<br><br>
+						<input placeholder="E-mail" type="text" name="field-email" value="">
+					</label>
+				</p>
+				<p>
+					<label>Дата рождения<br><br>
+						<input type="date" name="field-date" value="2000-01-01">
+					</label>
+				</p>
+				<p>Пол<br><br>
+					<label><input type="radio" name="radio-gender" value="man">Мужской</label>
+					<label><input type="radio" name="radio-gender" value="woman">Женский</label>
+				</p>
+				<p>Количество конечностей<br><br>
+					<label><input type="radio" name="radio-numlimbs" value="1">1</label>
+					<label><input checked type="radio" name="radio-numlimbs" value="2">2</label>
+					<label><input type="radio" name="radio-numlimbs" value="4">4</label>
+					<label> <input type="radio" name="radio-numlimbs" value="8">8</label>
+					<label> <input type="radio" name="radio-numlimbs" value="16">16</label>
+				</p>
+				<p>
+					<label>Сверхспособности<br><br>
+						<select multiple name="super-powers">
+							<option value="pizza">Бесплатная пицца</option>
+							<option selected value="sleep">Непрерывный сон</option>
+							<option value="concentration">Запредельная концентрация</option>
+						</select>
+					</label>
+				</p>
+				<div>
+					<p>
+						<label>Биография<br><br>
+							<textarea placeholder="Расскажите о себе" name="user-biography" id="biography"></textarea>
+						</label>
+					</p>
+				</div>
+				<p>
+					<label>
+						<input type="checkbox" name="user-agree" value="true">С контранктом ознакомлен (а)
+					</label>
+				</p>
+				<p>
+					<input type="submit" value="Отправить">
+				</p>
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
