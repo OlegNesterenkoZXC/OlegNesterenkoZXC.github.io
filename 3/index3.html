@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Ковёр</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="../img/icon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__row">
+			<div class="header__image">
+				<img src="../img/logo.png" alt="logo">
+			</div>
+			<div class="header__text">
+				<h1>Ковёр не воробей, вылетит — не поймаешь</h1>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<div class="container">
+			<nav class="nav">
+				<div class="nav__item">
+					<div class="nav__btm">
+						<div class="nav__ref">
+							<a href="#links">Ссылки</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__item">
+					<div class="nav__btm">
+						<div class="nav__ref">
+							<a href="#form">Форма</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__item">
+					<div class="nav__btm">
+						<div class="nav__ref">
+							<a href="#table">Таблица</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="content">
+				<div class="links">
+					<h2 class="links__title title" id="links">Ссылки</h2>
+					<ol>
+						<li>Гиперссылка на главную страницу сайта:&nbsp;<a target="_blank"
+								href="http://www.youtube.com">YouTube</a>
+						</li>
+						<li>Гиперссылка на главную страницу сайта с протоколом https:&nbsp;<a target="_blank"
+								href="https://www.youtube.com">YouTube</a></li>
+						<li>Ссылка на файл на сервере FTP без авторизации:&nbsp;<a
+								href="ftp://example.com/myfile.zip">Файл</a>
+						</li>
+						<li>Ссылка на файл на сервере FTP с авторизацией:&nbsp;<a
+								href="ftp://user:password@example.com/myfile.zip">Файл с
+								авторизацией</a></li>
+						<li>Ссылка на фрагмент страницы некоторого сайта:&nbsp;<a target="_blank"
+								href="https://ru.wikipedia.org/wiki/Октябрьская_революция#Предпосылки">Предпосылки
+								Октябрьской
+								Революции</a></li>
+						<li>Ссылка на фрагмент текущей страницы:&nbsp;<a href="#biography">Напишите свою биографию</a>
+						</li>
+						<li>Ссылка с двумя параметрами в URL:&nbsp;<a target="_blank"
+								href="https://yandex.ru/search/?text=boolean&lr=35">
+								Поиск: тип boolean</a></li>
+						<li>Список ссылок основной навигации сайта с подписями title:&nbsp;<a
+								href="#links">Ссылки</a>,&nbsp;<a href="#form">Форма</a></li>
+						<li>Ссылка без href:&nbsp;<a>Ссылка без href</a></li>
+						<li>Ссылка с пустным href:&nbsp;<a href="#">Ссылка с пустым href</a></li>
+						<li>Ссылка, по которой запрещен переход поисковикам:&nbsp;<a target="_blank"
+								href="https://www.wikipedia.org" rel="nofollow">Wikipedia</a></li>
+						<li>Ссылка, запрещенная для индексации поисковиками:&nbsp;<noindex--><a target="_blank"
+									href="https://www.facebook.com">Facebook</a></noindex-->
+						</li>
+						<li>Ссылка контекстная в тексте абзаца:<p>Москва столица <a target="_blank"
+									href="https://ru.wikipedia.org/wiki/Россия">
+									России</a>, город федерального значения, крупнейший по численности населения город и
+								её
+								субъект
+								— 12 655 050, самый населённый из городов, полностью расположенных в <a target="_blank"
+									href="https://ru.wikipedia.org/wiki/Европа">Европе</a>.</p>
+						</li>
+						<li>Ссылка-изображение:<br>
+							<a target=" _blank" href="https://ru.wikipedia.org/wiki/Октябрьская_революция"><img
+									class="flexible-image" src="../img/avroranew.png" alt="image"></a>
+						</li>
+						<li>Области-ссылки:
+							<map name="avatar">
+								<area alt="Вода" shape="circle" coords="625,625,143" target="_blank"
+									href="https://avatar.fandom.com/ru/wiki/Магия_воды" title="Магия воды">
+								<area alt="Огнь" shape="poly" coords="154,23,42,129,32,284,268,284,239,83"
+									target="_blank" href="https://avatar.fandom.com/ru/wiki/Магия_огня"
+									title="Магия огня">
+								<area alt="Земля" shape="poly" coords="150,480,20,745,287,745,287,511" target="_blank"
+									href="https://avatar.fandom.com/ru/wiki/Магия_земли" title="Магия земли">
+								<area alt="Воздух" shape="poly" coords="498,25,498,271,739,271,739,25" target="_blank"
+									href="https://avatar.fandom.com/ru/wiki/Магия_воздуха" title="Магия воздуха">
+							</map>
+							<img class="flexible-image" src="../img/avatar.png" alt="elements" usemap="#avatar">
+						</li>
+						<li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+						<li><a href="./about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
+						<li><a href="../example.html">Относительная ссылка на страницу в каталоге уровнем выше
+								текущего</a>
+						</li>
+						<li><a href="../../example.com">Относительная ссылка на страницу в каталоге двумя уровнями
+								выше</a>
+						</li>
+						<li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+						<li><a href="/example.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+					</ol>
+				</div>
+				<div class="table-form">
+					<div class="table">
+						<h2 class="table__title title" id="table">Таблица</h2>
+						<table class="table__cpu">
+							<tr>
+								<th class="table-cpu" rowspan="2">Процессор</th>
+								<th colspan="3">Разрядность</th>
+								<th class="table-mem" rowspan="2">Объём памяти</th>
+							</tr>
+							<tr>
+								<th>регистров</th>
+								<th>шины данных</th>
+								<th>шины адреса</th>
+							</tr>
+							<tr>
+								<td>Intel8086</td>
+								<td>16</td>
+								<td>16</td>
+								<td>20</td>
+								<td>до 1 Мб</td>
+							</tr>
+							<tr>
+								<td>Intel80286</td>
+								<td>16</td>
+								<td>16</td>
+								<td>24</td>
+								<td>до 16 Мб</td>
+							</tr>
+							<tr>
+								<td>Intel80386</td>
+								<td>32</td>
+								<td>16</td>
+								<td>24</td>
+								<td>до 16 Мб</td>
+							</tr>
+							<tr>
+								<td>Intel80486</td>
+								<td>32</td>
+								<td>32</td>
+								<td>32</td>
+								<td>до 4 Гб</td>
+							</tr>
+							<tr>
+								<td>Pentium</td>
+								<td>32</td>
+								<td>64</td>
+								<td>32</td>
+								<td>до 4 Гб</td>
+							</tr>
+							<tr>
+								<td>Pentium II</td>
+								<td>32</td>
+								<td>64</td>
+								<td>36</td>
+								<td>до 64 Гб</td>
+							</tr>
+						</table>
+					</div>
+					<div class="form">
+						<h2 class="form__title title" id="form">Форма</h2>
+						<form action="#" method="POST">
+							<fieldset>
+								<legend>Ваши данные</legend>
+								<p>
+									<label>Имя<br><br>
+										<input placeholder="Имя" type="text" name="field-name" value="">
+									</label>
+								</p>
+								<p>
+									<label>E-mail<br><br>
+										<input placeholder="E-mail" type="text" name="field-email" value="">
+									</label>
+								</p>
+								<p>
+									<label>Дата рождения<br><br>
+										<input type="date" name="field-date" value="2000-01-01">
+									</label>
+								</p>
+								<p>Пол<br><br>
+									<label><input type="radio" name="radio-gender" value="man">Мужской</label>
+									<label><input type="radio" name="radio-gender" value="woman">Женский</label>
+								</p>
+								<p>Количество конечностей<br><br>
+									<label><input type="radio" name="radio-numlimbs" value="1">1</label>
+									<label><input checked type="radio" name="radio-numlimbs" value="2">2</label>
+									<label><input type="radio" name="radio-numlimbs" value="4">4</label>
+									<label> <input type="radio" name="radio-numlimbs" value="8">8</label>
+									<label> <input type="radio" name="radio-numlimbs" value="16">16</label>
+								</p>
+								<p>
+									<label>Сверхспособности<br><br>
+										<select multiple name="super-powers">
+											<option value="pizza">Бесплатная пицца</option>
+											<option selected value="sleep">Непрерывный сон</option>
+											<option value="concentration">Запредельная концентрация</option>
+										</select>
+									</label>
+								</p>
+								<div>
+									<p>
+										<label>Биография<br><br>
+											<textarea placeholder="Расскажите о себе" name="user-biography"
+												id="biography"></textarea>
+										</label>
+									</p>
+								</div>
+								<p>
+									<label>
+										<input type="checkbox" name="user-agree" value="true">С контранктом ознакомлен
+										(а)
+									</label>
+								</p>
+								<p>
+									<input type="submit" value="Отправить">
+								</p>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__row">
+			<div class="footer__text">Nesterenko</div>
+		</div>
+	</footer>
+</body>
+
+</html>

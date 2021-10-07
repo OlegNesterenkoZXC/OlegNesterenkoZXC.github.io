@@ -1,0 +1,193 @@
+//Обнуляющий стиль
+@import "nullstyle.scss";
+
+//шрифт
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body
+{
+	font-family: 'Nunito', sans-serif;
+	background-image: url(../../../img/background.jpg);
+}
+.wrapper
+{
+	margin: auto;
+}
+.flexible-image
+{
+	display: block;
+	max-width: 100%;
+}
+.header
+{
+	padding: 25px;
+	background-color: #AF4425;
+	margin: 0 0 10px 0;
+	border-radius: 0 0 20px 20px;
+	&__row
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__image
+	{
+		flex: 0 0 150px;
+	}
+	&__image img
+	{
+		width: 150px;
+	}
+	&__text
+	{
+		flex: 1 1 auto;
+		font-size: 55px;
+		font-weight: 700;
+		color: rgb(227, 236, 142);
+	}
+}
+.title
+{
+	text-align: center;
+	font-size: 24px;
+	color: rgb(28, 82, 111);
+	font-weight: bold;
+	margin: 0 0 30px 0;
+}
+p
+{
+	margin: 15px;
+}
+.nav
+{
+	border-radius: 20px 20px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: rgb(215, 172, 122);
+	padding: 0 30px;
+	&__btm
+	{
+		display: block;
+		text-align: center;
+		width: 100px;
+		background-color: rgb(139, 114, 84);
+		height: 50px;
+		line-height: 50px;
+		border-radius: 10px;
+		margin: 5px 0;
+	}
+	&__btm:hover
+	{
+		background-color: rgb(110, 89, 65);
+	}
+	&__ref a
+	{
+		font-size: 16px;
+		color: white;
+	}
+}
+.content
+{
+	padding: 30px;
+	background-color: #EBDCB2;
+	border-radius: 0 0 20px 20px;
+	margin: 0 0 10px 0;
+}
+.links
+{
+	margin: 0 0 30px 0;
+	& ol
+	{
+		margin: 0 0 0 40px;
+		font-size: 16px;
+	}
+	& ol a
+	{
+		text-decoration: underline;
+	}
+	& ol img
+	{
+		margin: 15px 0;
+	}
+}
+.table-form
+{
+	display: flex;
+	flex-direction: column;
+}
+.table
+{
+	order: 2;
+	margin: 0 0 30px 0;
+	&__cpu
+	{
+		width: 600px;
+		font-size: 16px;
+		margin: 0 auto;
+		text-align: center;
+		border-collapse: collapse;
+		border: 2px solid black;
+		th, td
+		{
+			padding: 1px;
+			border: 2px solid black;
+		}
+	}
+}
+.form
+{
+	order: 1;
+	font-size: 16px;
+	& fieldset
+	{
+		border: 1px solid rgb(28, 82, 111);
+	}
+	& legend
+	{
+		margin: 0 5px;
+		padding: 0 5px;
+		font-size: 20px;
+		color: rgb(28, 82, 111);
+	}
+	& label
+	{
+		margin: 0 0 15px 0;
+	}
+}
+.footer
+{
+	background-color: #C9A66B;
+	&__row
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+	}
+	&__text
+	{
+		font-size: 16px;
+		color: #55462b;
+	}
+}
+@media screen and (min-width: 800px)
+{
+	.wrapper
+	{
+		max-width: 960px;
+		margin: auto;
+	}
+	.nav
+	{
+		flex-direction: row;
+	}
+	.form
+	{
+		order: 2;
+	}
+	.table
+	{
+		order: 1;
+	}
+}
