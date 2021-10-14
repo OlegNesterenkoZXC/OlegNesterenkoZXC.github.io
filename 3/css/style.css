@@ -74,7 +74,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*!----------*/
+h1 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #e3ec8e;
+}
+
 body {
+	font-size: 10px;
 	font-family: "Nunito", sans-serif;
 	background-image: url(../../../img/background.jpg);
 }
@@ -89,53 +96,46 @@ body {
 }
 
 .header {
-	padding: 25px;
+	padding: 5px;
 	background-color: #AF4425;
-	margin: 0 0 10px 0;
-	border-radius: 0 0 20px 20px;
 }
 .header__row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	max-height: 250px;
 }
 .header__image {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 150px;
-	        flex: 0 0 150px;
+	-ms-flex-preferred-size: 15%;
+	    flex-basis: 15%;
 }
 .header__image img {
-	width: 150px;
+	max-width: 100%;
+	max-height: 100%;
 }
 .header__text {
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 auto;
-	        flex: 1 1 auto;
-	font-size: 55px;
-	font-weight: 700;
-	color: #e3ec8e;
+	    -ms-flex: 1 1 85%;
+	        flex: 1 1 85%;
+	text-align: center;
 }
 
 .title {
 	text-align: center;
-	font-size: 24px;
+	font-size: 11px;
 	color: #1c526f;
 	font-weight: bold;
-	margin: 0 0 30px 0;
+	margin: 10px 0;
 }
 
 p {
-	margin: 15px;
+	margin: 5px;
 }
 
 .nav {
-	border-radius: 20px 20px 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -146,15 +146,15 @@ p {
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 	background-color: #d7ac7a;
-	padding: 0 30px;
+	padding: 5px;
 }
 .nav__btm {
 	display: block;
 	text-align: center;
-	width: 100px;
+	width: 20%;
 	background-color: #8b7254;
-	height: 50px;
-	line-height: 50px;
+	height: 40px;
+	line-height: 40px;
 	border-radius: 10px;
 	margin: 5px 0;
 }
@@ -162,29 +162,25 @@ p {
 	background-color: #6e5941;
 }
 .nav__ref a {
-	font-size: 16px;
 	color: white;
 }
 
 .content {
-	padding: 30px;
+	padding: 5px;
 	background-color: #EBDCB2;
-	border-radius: 0 0 20px 20px;
-	margin: 0 0 10px 0;
 }
 
-.links {
-	margin: 0 0 30px 0;
-}
 .links ol {
-	margin: 0 0 0 40px;
-	font-size: 16px;
+	margin: 0 0 0 20px;
+}
+.links li {
+	line-height: 15px;
 }
 .links ol a {
 	text-decoration: underline;
 }
 .links ol img {
-	margin: 15px 0;
+	margin: 5px -10px;
 }
 
 .table-form {
@@ -201,11 +197,10 @@ p {
 	-webkit-box-ordinal-group: 3;
 	    -ms-flex-order: 2;
 	        order: 2;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 }
 .table__cpu {
 	width: 100%;
-	font-size: 16px;
 	margin: 0 auto;
 	text-align: center;
 	border-collapse: collapse;
@@ -220,7 +215,6 @@ p {
 	-webkit-box-ordinal-group: 2;
 	    -ms-flex-order: 1;
 	        order: 1;
-	font-size: 16px;
 }
 .form fieldset {
 	border: 1px solid #1c526f;
@@ -228,11 +222,7 @@ p {
 .form legend {
 	margin: 0 5px;
 	padding: 0 5px;
-	font-size: 20px;
 	color: #1c526f;
-}
-.form label {
-	margin: 0 0 15px 0;
 }
 
 .footer {
@@ -251,14 +241,77 @@ p {
 	height: 50px;
 }
 .footer__text {
-	font-size: 16px;
 	color: #55462b;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 425px) {
+	h1 {
+		font-size: 16px;
+	}
+
+	body {
+		font-size: 12px;
+	}
+
+	.title {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	.content {
+		padding: 10px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.links li {
+		line-height: 20px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	h1 {
+		font-size: 35px;
+	}
+
+	.title {
+		margin: 15px 0;
+		font-size: 25px;
+	}
+
+	p {
+		margin: 15px;
+	}
+
+	body {
+		font-size: 16px;
+	}
+
+	.header {
+		padding: 25px;
+		background-color: #AF4425;
+		margin: 0 0 10px 0;
+		border-radius: 0 0 20px 20px;
+	}
+
 	.wrapper {
 		max-width: 960px;
 		margin: auto;
+	}
+
+	.content {
+		padding: 30px;
+		border-radius: 0 0 20px 20px;
+		margin: 0 0 10px 0;
 	}
 
 	.nav {
@@ -266,6 +319,15 @@ p {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
+		border-radius: 20px 20px 0 0;
+		padding: 0 30px;
+	}
+	.nav__btm {
+		width: 100px;
+	}
+
+	.links ol {
+		margin: 0 0 0 40px;
 	}
 
 	.form {
@@ -278,5 +340,29 @@ p {
 		-webkit-box-ordinal-group: 2;
 		    -ms-flex-order: 1;
 		        order: 1;
+		margin: 0 auto;
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	h1 {
+		font-size: 55px;
+	}
+
+	body {
+		font-size: 20px;
+	}
+
+	.nav {
+		padding: 10px 0;
+	}
+	.nav__btm {
+		width: 120px;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.links li {
+		line-height: 25px;
 	}
 }
